@@ -16,21 +16,21 @@ for (let i = 0; i < nilaiUN.length; i++) {
         var hasil = total / nilaiUN.length;
     }
 }
-hasilPembulatan = hasil;
-if (hasilPembulatan <= 59) {
-    console.log(`Rata-rata = ${hasilPembulatan}`);
+nilaiForGrading = hasil;
+if (nilaiForGrading <= 59) {
+    console.log(`Rata-rata = ${nilaiForGrading}`);
     console.log(`Grade E`)
-} else if (hasilPembulatan >= 60 && hasilPembulatan <= 69) {
-    console.log(`Rata-rata = ${hasilPembulatan}`);
+} else if (nilaiForGrading >= 60 && nilaiForGrading <= 69) {
+    console.log(`Rata-rata = ${nilaiForGrading}`);
     console.log(`Grade D`)
-} else if (hasilPembulatan >= 70 && hasilPembulatan <= 79) {
-    console.log(`Rata-rata = ${hasilPembulatan}`);
+} else if (nilaiForGrading >= 70 && nilaiForGrading <= 79) {
+    console.log(`Rata-rata = ${nilaiForGrading}`);
     console.log(`Grade C`)
-} else if (hasilPembulatan >= 80 && hasilPembulatan <= 89) {
-    console.log(`Rata-rata = ${hasilPembulatan}`);
+} else if (nilaiForGrading >= 80 && nilaiForGrading <= 89) {
+    console.log(`Rata-rata = ${nilaiForGrading}`);
     console.log(`Grade B`)
-} else if (hasilPembulatan >= 90 && hasilPembulatan <= 100) {
-    console.log(`Rata-rata = ${hasilPembulatan}`);
+} else if (nilaiForGrading >= 90 && nilaiForGrading <= 100) {
+    console.log(`Rata-rata = ${nilaiForGrading}`);
     console.log(`Grade A`)
 } else {
     console.log("Format invalid");

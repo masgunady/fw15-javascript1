@@ -4,11 +4,13 @@ let dataDiri = {
     hoobies: ["Olraga", "Music"],
     is_married: true,
     school_list: [{
-            major: "SMK",
+            name: "SMKN 1 KARAWANG",
+            major: "Vocational High School",
             year_in: "2011",
             year_out: "2014"
         },
         {
+            name: "STMIK KHARISMA KARAWANG",
             major: "Bachelor Degree",
             year_in: "2014",
             year_out: "2019"
@@ -16,11 +18,11 @@ let dataDiri = {
     ],
     skill: [{
             skill_name: "Laravel",
-            level: "Junior"
+            level: "Beginer"
         },
         {
             skill_name: "CI",
-            level: "Junior"
+            level: "Beginer"
         }
     ],
     interesting_coding: true
