@@ -1,9 +1,10 @@
-let dataDiri = {
+const levels = ['beginer', 'advanced', 'expert'];
+const biodata = {
     name: "Gunadi Pratama Sulistiawan",
     age: 26,
     hoobies: ["Olraga", "Music"],
-    is_married: true,
-    school_list: [{
+    isMarried: true,
+    schoolList: [{
             name: "SMKN 1 KARAWANG",
             major: "Vocational High School",
             year_in: "2011",
@@ -16,17 +17,17 @@ let dataDiri = {
             year_out: "2019"
         }
     ],
-    skill: [{
+    skills: [{
             skill_name: "Laravel",
-            level: "Beginer"
+            level: levels[0]
         },
         {
             skill_name: "CI",
-            level: "Beginer"
+            level: levels[0]
         }
     ],
-    interesting_coding: true
+    interestInCoding: true
 
 }
 
-console.log(dataDiri);
+console.log(biodata);

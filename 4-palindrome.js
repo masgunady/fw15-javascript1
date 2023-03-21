@@ -1,18 +1,46 @@
-function isPalindrome(value) {
-    if (value.length <= 2) {
-        return 'Input String setidaknya terdiri dari tiga karakter'
-    } else {
-        for (var i = 0; i < value.length / 2; i++) {
-            var indexAwal = value[i];
-            var indexAkhir = value[value.length - 1 - i];
-            // console.log(indexAwal + ":" + indexAkhir)
-            if (indexAwal !== indexAkhir) {
-                return 'Bukan Palindrome';
-            }
+// Program untuk mengecek kata palindrome
+// Menggunakan metode perbandingan string asli dengan reverse string
+function palindrom(teks) {
+    if (teks.length <= 2) {
+        console.log('Teks harus lebih dari 2 huruf !');
+        return;
+    }
 
-        }
-        return 'Palindrome'
+    let hasil = '';
+    for (var i = teks.length - 1; i >= 0; i--) {
+        hasil += teks[i];
+    }
+
+    if (hasil === teks) {
+        console.log('Palindrome');
+    } else {
+        console.log('Bukan Palindrome');
     }
 }
 
-console.log(isPalindrome('kakak'));
+palindrom('kakak');
+
+
+
+console.log('----------------');
+
+// Program untuk mengecek kata palindrome
+// Menggunakan metode perbandingan index awal dan indeks akhir
+function palindrome(teks) {
+    if (teks.length <= 2) {
+        console.log('Teks harus lebih dari 2 huruf !');
+        return;
+    }
+    for (var i = 0; i < teks.length / 2; i++) {
+        var indexAwal = teks[i];
+        var indexAkhir = teks[teks.length - 1 - i];
+        if (indexAwal !== indexAkhir) {
+            console.log('Bukan Palindrome');
+            return;
+        }
+    }
+    console.log('Palindrome');
+
+}
+
+palindrome('kakak');
